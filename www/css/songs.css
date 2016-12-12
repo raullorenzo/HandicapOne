@@ -1,0 +1,55 @@
+#vplaylist, #vplayer {
+width: 400px; /* Ancho de todo el contenedor */
+padding: 20px;
+margin: 0 auto;
+display: block;
+text-align: center;
+}
+#vplayer {
+padding: 10px 20px;
+background: #000; /* Color de fondo primer del contenedor */
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+video {
+width:400px; /* Ancho del reproductor */
+padding-top: 10px;
+margin:0 auto;
+display: inline-block
+}
+#vplaylist {
+margin: 0 auto 20px auto;
+display: block;
+background: #424242; /* Color de fondo del segundo contenedor */
+border-top: 5px solid #9F111B;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+text-align: left;
+font-size: 12px;
+font-family: 'Trebuchet MS', Trebuchet, Verdana, sans-serif;
+font-weight: normal;
+}
+#vplaylist li, #vplaylist ul li {
+background-image: none;
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+#vplaylist li a:hover{
+background: #9F111B; /* Color de fondo al pasar el cursor */
+text-decoration: none;
+}
+#vplaylist .active a {
+color: #B11623; /* Color de la canción activa */
+font-style: italic;
+text-decoration: none;
+}
+#vplaylist .active a:before {
+content: "\25B6";
+color: #CCC;
+font-style: normal;
+padding-right: 8px;
+}
+#vplaylist .active a:hover {
+color: #222; /* Color de la canción activa al pasar el cursor */
+}

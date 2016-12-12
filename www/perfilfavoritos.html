@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Proyecto Final de Curso</title>
+	<meta name="description">
+	<meta name="Raúl Lorenzo" >
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/responsiveslides.css" />
+
+	<!-- <link rel="stylesheet" type="text/css" href="engine1/style.css" /> -->
+
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="estilos.css">
+	<link href='http://fonts.googleapis.com/css?family=Fira+Sans:500' rel='stylesheet' type='text/css'>
+
+	
+	
+
+	
+	<link href='./images/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+	<style type="text/css">
+	
+		.go-top {
+			position: fixed;
+			bottom: 2em;
+			right: 2em;
+			text-decoration: none;
+			color: #fff;
+			background-color: rgba(0, 0, 0, 0.3);
+			font-size: 12px;
+			padding: 1em;
+			display: none;
+		}
+
+		.go-top:hover {
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+
+	</style>
+</head>
+<body>
+<!--Header-->
+<header>
+	<div class="wrap-header zerogrid" id="cabecera">
+		
+		<div id="logos">
+			<a href="#"><img src="./images/Product.png"/></a>
+		</div>
+
+		<div  class="saludo_users" id="saludo_user">
+			
+		</div>
+
+		<div class="macinput">
+			<!-- Usuario:
+			<input type="text" class="mac" placeholder="Introduce Usuario"> -->
+			<button type="button" class="botonexit" id="button_exit">Salir</button>
+		</div>
+		
+		<div id="fecha">
+				<script type="text/javascript"> 
+					var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"); 
+					var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+					var f=new Date(); 
+					document.write(diasSemana[f.getDay()] + " " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+				</script>
+		</div>
+		<div id="reloj"></div>
+	</div>
+</header>
+
+	<nav id="menu">
+          <ul>
+            <li><a href="registrado.html"><span class="lnr lnr-home" id="primero"><i class="icon"></i></span>PARTIDOS</a></li>
+            <li><a href=""><span class="lnr lnr-tag" id="segundo"><i class="icon"></i></span>PERFIL</a>
+              <ul id="sub1">
+                <li><a href="perfil.html">Mis Datos</a></li>
+                <li><a href="perfilfavoritos.html">Mis Partidos</a></li>
+            
+              
+              </ul>
+            </li>
+            <!-- <li><a href="comentarios.html"><span class="lnr lnr-briefcase" id="tercero"><i class="icon"></i></span>COMENTARIOS</a>
+              <ul id="sub2">
+                <li><a href="androitor.html">Androitor</a></li>
+                <li><a href="bender.html">Bender</a></li>
+                <li><a href="galeria.html">Slideshow</a></li>
+               
+              </ul>
+            </li> -->
+            <li><a href="http://www.nba.com"><span class="lnr lnr-book" id="cuarto"><i class="icon"></i></span>NOTICIA</a>
+              
+            </li>
+            
+            
+            <li><a href=""><span class="lnr lnr-envelope" id="sexto"><i class="icon"></i></span>OTROS</a></li>
+          </ul>
+    </nav> 
+
+
+
+<!--Content-->
+<section id="content">
+	<div class="wrap-content zerogrid" id="cuadro1">
+		<div class="row block01">
+			<div class="col-1-3">
+				<div class="wrap-col box" id="colbox1">
+					<h2>Tus Equipos NBA</h2>
+					<p>Aquí podrás encontrar toda la información sobre tu equipo.</p>
+					<div class="more"><a href="#">[...]</a></div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col box" id="colbox2">
+					<h2>Top 10</h2>
+					<p>Aquí podrás encontrar los Picks más comentados.</p>
+					<div class="more"><a href="#">[...]</a></div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col box" id="colbox3">
+					<h2>Noticias de Última Hora</h2>
+					<p>Entra aquí para estar al corriente de todo, apuesta seguro.</p>
+					<div class="more"><a href="#">[...]</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row block02" id="fondo_boque">
+			<div class="col-2-3">
+				<div class="wrap-col">
+					<div class="heading"><h2>Picks Favoritos </h2></div>
+					<article class="row">
+						<div class="col-3-3" id="result_anuncios"></div>
+
+						<div class="col-3-3" id="result_anuncios2"></div>
+					</article>
+
+					<!-- <article class="row">
+						<div class="col-3-3" >
+							<div class="wrap-col">
+								<h2><strong>Puntuación</strong></h2>
+								<div class="info">Picks acertados: 89</div><br>
+								<div class="info">Picks errados: 29</div><br>
+								<div class="info">Puntuación total: 350 puntos</div><br>
+								<div>
+									<a class="boton verde" href="" onclick="" id="modperfil" align="left">Modificar Perfil</a>
+								</div>
+							</div>
+						</div>
+					</article> -->
+					
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Foto de Perfil</h2></div>
+						<div class="content">
+							<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+							<div id="wowslider-container1">
+								<div class="ws_images" id="imagenperfil"></div>				
+								<div class="ws_shadow"></div>
+							</div>	
+						</div>
+					</div>
+					
+					<div class="box">
+						<div class="heading"><h2>Clasificación Tipsters</h2></div>
+						<div class="content">
+						<div class="list" id="sidebar">
+							<ul>
+								<li><a href="http://www.google.com">2 Javi</a></li>
+								<li><a href="#">3 Rulas</a></li>
+								<li><a href="#">4 Pichon</a></li>
+								<li><a href="#">5 Gandalf</a></li>
+								<li><a href="#">6 Pepelu</a></li>
+								<li><a href="#">7 Pitu</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				</div>
+			</div>
+		
+</section>
+<!--Footer-->
+<footer>
+	<div class="wrap-footer zerogrid">
+		<div class="row block09">
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Nosotros</h2></div>
+						<div class="content">
+							<p>Somos tres alumnos del curso de verano proporcionado por JEDI Academy, y presentamos nuestro proyecto esperando que sea del agrado de todos vosotros.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Últimos Posts</h2></div>
+						<div class="content">
+							<ul>
+								<li><a href="#">Magic Island Ibiza</a></li>
+								<li><a href="#">Bamboo Is Just For You</a></li>
+								<li><a href="#">Every Hot Summer</a></li>
+								<li><a href="#">Magic Island Ibiza</a></li>
+								<li><a href="#">Bamboo Is Just For You</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Contact Us</h2></div>
+						<div class="content">
+							<ul>
+								<li>Dirección : 0123 Elm Street.</li>
+								<li>Teléfono : 000.000.000.000</li>
+								<li>Email : Nosotros@alumnosjedi.com</li>
+								<li>Website : padawan.jediupc.com</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row copyright">
+			<p>Handicap One Copyright © 2015 - Built by Raúl Lorenzo   <img id="upc" src="images/upc.png"></p>
+			
+		</div>
+	</div>
+	<a class="go-top" href="#">Subir</a>
+</footer>
+<script src="js/jquery.min.js"></script>
+
+<script src="js/perfilfavoritos2.js"></script>
+
+<script src="js/modernizr.custom.63321.js"></script>
+
+
+<script src="js/uritemplate.js"></script>
+<script src="js/jquery.base64.js"></script>
+<script src="js/linkheaders.js"></script>
+<!-- <script src="js/jquery.cookie.js"></script> -->
+<!-- <script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<script type="text/javascript" src="engine1/jquery.js"></script> -->
+
+
+<!-- JavaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+	</script>
+	<script type="text/javascript"> 
+		function startTime(){ today=new Date();
+			h=today.getHours(); 
+			m=today.getMinutes(); 
+			s=today.getSeconds(); 
+			m=checkTime(m); s=checkTime(s); 
+			document.getElementById('reloj').innerHTML=h+":"+m+":"+s; 
+			t=setTimeout('startTime()',500);
+		} 
+		function checkTime(i) {
+			if (i<10) {
+				i="0" + i;
+			}
+			return i;
+		} 
+		window.onload=function(){
+			startTime();
+		} 
+	</script> 
+
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/linkheaders.js"></script>
+	<script type="text/javascript" src="js/uritemplate.js"></script>
+	
+
+	
+
+</body>
+</html>
+
+
+
+

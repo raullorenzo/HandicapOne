@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Proyecto Final de Curso</title>
+	<meta name="description">
+	<meta name="Raúl Lorenzo" >
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/responsiveslides.css" />
+
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="estilos.css">
+	<link href='http://fonts.googleapis.com/css?family=Fira+Sans:500' rel='stylesheet' type='text/css'>
+
+	
+	
+
+	
+	<link href='./images/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+	<style type="text/css">
+	
+		.go-top {
+			position: fixed;
+			bottom: 2em;
+			right: 2em;
+			text-decoration: none;
+			color: #fff;
+			background-color: rgba(0, 0, 0, 0.3);
+			font-size: 12px;
+			padding: 1em;
+			display: none;
+		}
+
+		.go-top:hover {
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+
+	</style>
+</head>
+<body>
+<!--Header-->
+<header>
+	<div class="wrap-header zerogrid" id="cabecera">
+		
+		<div id="logos">
+			<a href="#"><img src="./images/Product.png"/></a>
+		</div>
+		<div class="saludo_users" id="saludo_user"></div>
+		<!-- <div class="macinput">
+			Usuario:
+			<input type="text" class="mac" id="user"placeholder="Introduce Usuario">
+		</div> -->
+		<div class="macinput">
+			<!-- Password:
+			<input type="text" class="mac" id="key" placeholder="Introduce Password"> -->
+			<button type="button" class="botonexit" id="button_exit">Salir</button>
+		</div>
+		<div id="fecha">
+				<script type="text/javascript"> 
+					var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"); 
+					var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+					var f=new Date(); 
+					document.write(diasSemana[f.getDay()] + " " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+				</script>
+		</div>
+		<div id="reloj"></div>
+		
+	</div>
+</header>
+
+	<nav id="menu">
+          <ul>
+            <li><a href="registrado.html"><span class="lnr lnr-home" id="primero"><i class="icon"></i></span>PARTIDOS</a></li>
+            <!-- <li><a href="#"><span class="lnr lnr-tag" id="segundo"><i class="icon"></i></span>CURRICULUMS</a>
+              <ul id="sub1">
+                <li><a href="cv1.html">CV 1</a></li>
+                <li><a href="cv2.html">CV 2</a></li>
+                <li><a href="cv3.html">CV 3</a></li>
+              
+              </ul>
+            </li> -->
+            <!-- <li><a href="comentarios.html"><span class="lnr lnr-briefcase" id="tercero"><i class="icon"></i></span>COMENTARIOS</a>
+              <ul id="sub2">
+                <li><a href="androitor.html">Androitor</a></li>
+                <li><a href="bender.html">Bender</a></li>
+                <li><a href="galeria.html">Slideshow</a></li>
+               
+              </ul>
+            </li> -->
+            
+            <li><a href="http://www.nba.com"><span class="lnr lnr-tag" id="segundo"><i class="icon"></i></span>NOTICIAS</a></li>
+            </li>
+            <!-- <li><a href="register.html"><span class="lnr lnr-user" id="septimo"><i class="icon"></i></span>REGISTRARSE</a></li> -->
+            <li><a href="contactoreg.html"><span class="lnr lnr-user" id="quinto"><i class="icon"></i></span>CONTACT</a></li>
+            <li><a href="nosotrosreg.html"><span class="lnr lnr-envelope" id="sexto"><i class="icon"></i></span>ABOUT</a></li>
+          </ul>
+    </nav> 
+
+
+
+<!--Content-->
+<section id="content">
+	<div class="wrap-content zerogrid" id="cuadro1">
+		<div class="row block01">
+			<div class="col-1-3">
+				<div class="wrap-col box" id="colbox1">
+					<h2>Tus Equipos NBA</h2>
+					<p>Aquí podrás encontrar toda la información sobre tu equipo.</p>
+					<div class="more"><a href="#">[...]</a></div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col box" id="colbox2">
+					<h2>Top 10</h2>
+					<p>Aquí podrás encontrar los Picks más comentados.</p>
+					<div class="more"><a href="#">[...]</a></div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col box" id="colbox3">
+					<h2>Noticias de Última Hora</h2>
+					<p>Entra aquí para estar al corriente de todo, apuesta seguro.</p>
+					<div class="more"><a href="#">[...]</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row block02" id="fondo_boque">
+			<div class="col-2-3">
+				<div class="wrap-col">
+					<div class="heading"><h2>Últimos Partidos</h2></div>
+					<div id="result_anuncios44">
+						<form action="envio.php" method="POST">
+          				<div class="col-lg-12 wow fadeInLeft delay-06s animated" style="visibility: visible; animation-name: fadeInLeft;">
+			            <div class="form">
+			              <input id="nombb"class="input-text" title="nombre" type="text" name="nombre" placeholder="Introduzca su nombre/empresa *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required="" id="nombre">
+			              <input id="emaill"class="input-text" title="email" type="email" name="email" placeholder="Introduzca su E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required="">
+			              <!-- <textarea class="input-text text-area" title="mensaje" name="mensaje" placeholder="Introduzca su mensaje *" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" required id="mensaje">
+			              </textarea> -->
+			              <textarea id="textu" class="input-text text-area" name="mensaje" title="mensaje" placeholder="Introduzca su mensaje *" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required="" id="mensaje"></textarea>
+              <input class="input-btn" type="submit" value="Enviar">
+            </div>
+          </div>
+        </form>
+
+
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>HANDICAP ONE</h2></div>
+						<div class="content">
+							<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+			<div id="wowslider-container1">
+				<div class="ws_images">
+					<ul>
+						<li>
+							<img src="data1/images/remote_image_1329324661.jpg" alt="" title="" id="wows1_0"/></li>
+						<li>
+							<img src="data1/images/hpg1213dangal25datarynashleytamara1.jpg" alt="hpg1213-dangal25-da-taryn-ashley-tamara1" title="hpg1213-dangal25-da-taryn-ashley-tamara1" id="wows1_1"/></li>
+						<li>
+							<img src="data1/images/basketball_michael_jordan_nba_kobe_bryant_93712_1920x1080.jpg" alt="basketball_michael_jordan_nba_kobe_bryant_93712_1920x1080" title="basketball_michael_jordan_nba_kobe_bryant_93712_1920x1080" id="wows1_2"/></li>
+						<li>
+							<img src="data1/images/1401000055_extras_noticia_foton_7_0.jpg" alt="1401000055_extras_noticia_foton_7_0" title="1401000055_extras_noticia_foton_7_0" id="wows1_3"/></li>
+						<li>
+							<img src="data1/images/scottie_pippen_chicago_bulls_michael_jordan_nba_basketball_76589_1920x1080.jpg" alt="scottie_pippen_chicago_bulls_michael_jordan_nba_basketball_76589_1920x1080" title="scottie_pippen_chicago_bulls_michael_jordan_nba_basketball_76589_1920x1080" id="wows1_4"/></li>
+						<li>
+							<img src="data1/images/nbamiamiheatcheerleadersdancers_1920x1080_244hd.jpg" alt="nba-miami-heat-cheerleaders-dancers_1920x1080_244-hd" title="nba-miami-heat-cheerleaders-dancers_1920x1080_244-hd" id="wows1_5"/></li>
+						<li>
+							<img src="data1/images/28nba1blog427.jpg" alt="28nba-1-blog427" title="28nba-1-blog427" id="wows1_6"/></li>
+						<li>
+							<a href="http://wowslider.com/vi"><img src="data1/images/images.jpg" alt="slider" title="images" id="wows1_7"/>
+							</a>
+						</li>
+						<li>
+							<img src="data1/images/derrickrosepicgettyimages8356723641424851209.jpg" alt="derrick-rose-pic-getty-images-835672364-1424851209" title="derrick-rose-pic-getty-images-835672364-1424851209" id="wows1_8"/>
+						</li>
+					</ul>
+				</div>
+				<div class="ws_bullets">
+					<div>
+						<a href="#" title=""><span><img src="data1/tooltips/remote_image_1329324661.jpg" alt=""/>1</span></a>
+						<a href="#" title="hpg1213-dangal25-da-taryn-ashley-tamara1"><span><img src="data1/tooltips/hpg1213dangal25datarynashleytamara1.jpg" alt="hpg1213-dangal25-da-taryn-ashley-tamara1"/>2</span></a>
+						<a href="#" title="basketball_michael_jordan_nba_kobe_bryant_93712_1920x1080"><span><img src="data1/tooltips/basketball_michael_jordan_nba_kobe_bryant_93712_1920x1080.jpg" alt="basketball_michael_jordan_nba_kobe_bryant_93712_1920x1080"/>3</span></a>
+						<a href="#" title="1401000055_extras_noticia_foton_7_0"><span><img src="data1/tooltips/1401000055_extras_noticia_foton_7_0.jpg" alt="1401000055_extras_noticia_foton_7_0"/>4</span></a>
+						<a href="#" title="scottie_pippen_chicago_bulls_michael_jordan_nba_basketball_76589_1920x1080"><span><img src="data1/tooltips/scottie_pippen_chicago_bulls_michael_jordan_nba_basketball_76589_1920x1080.jpg" alt="scottie_pippen_chicago_bulls_michael_jordan_nba_basketball_76589_1920x1080"/>5</span></a>
+						<a href="#" title="nba-miami-heat-cheerleaders-dancers_1920x1080_244-hd"><span><img src="data1/tooltips/nbamiamiheatcheerleadersdancers_1920x1080_244hd.jpg" alt="nba-miami-heat-cheerleaders-dancers_1920x1080_244-hd"/>6</span></a>
+						<a href="#" title="28nba-1-blog427"><span><img src="data1/tooltips/28nba1blog427.jpg" alt="28nba-1-blog427"/>7</span></a>
+						<a href="#" title="images"><span><img src="data1/tooltips/images.jpg" alt="images"/>8</span></a>
+						<a href="#" title="derrick-rose-pic-getty-images-835672364-1424851209"><span><img src="data1/tooltips/derrickrosepicgettyimages8356723641424851209.jpg" alt="derrick-rose-pic-getty-images-835672364-1424851209"/>9</span></a>
+					</div>
+				</div>
+				<div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">responsive slider</a> by WOWSlider.com v8.5m
+				</div>
+				<div class="ws_shadow"></div>
+			</div>	
+		</div>
+		</div>
+		<div class="box">
+			<div class="heading"><h2>Jugador H1: Stephen Curry</h2></div>
+				<div class="content">
+					<img src="images/curry.png"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="heading"><h2>Clasificación Jugadores</h2></div>
+				<div class="content">
+					<div class="list" id="sidebar">
+						<ul>
+							<li><a href="#">2 Derrick Rose</a></li>
+							<li><a href="#">3 LeBron James</a></li>
+							<li><a href="#">4 Pau Gasol</a></li>
+							<li><a href="#">5 Kobe Bryant</a></li>
+							<li><a href="#">6 Kevint Durant</a></li>
+							<li><a href="#">7 Marc Gasol</a></li>
+						</ul>
+					</div>
+				</div>
+				<br>
+			</div>
+				<div class="box">
+					<div class="heading"><h2>Equipo H1: Golden State</h2></div>
+					<div class="content">
+						<img id="equip" src="img/4dd0d8cc-3d24-4924-91fe-6b7e77263c02.png"/>
+					</div>
+				</div>
+				<div class="box">
+					<div class="heading"><h2>Clasificación Equipos</h2></div>
+					<div class="content">
+						<div class="list" id="sidebar">
+							<ul>
+								<li><a href="#">2 Chicago Bulls</a></li>
+								<li><a href="#">3 Los Ángeles Lakers</a></li>
+								<li><a href="#">4 Miami Heat</a></li>
+								<li><a href="#">5 Detroit Pistons</a></li>
+								<li><a href="#">6 New Orleans Pelicans</a></li>
+								<li><a href="#">7 New York Knicks</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="box">
+					<div class="heading"><h2>Tipster H1: Chiquirisi</h2></div>
+					<div class="content">
+						<img id="tipster" src="images/raul.jpg"/>
+					</div>
+				</div>
+				<div class="box">
+					<div class="heading"><h2>Clasificación Tipsters</h2></div>
+						<div class="content">
+						<div class="list" id="sidebar">
+							<ul>
+								<li><a href="http://www.google.com">2 Javi</a></li>
+								<li><a href="#">3 Rulas</a></li>
+								<li><a href="#">4 Pichon</a></li>
+								<li><a href="#">5 Gandalf</a></li>
+								<li><a href="#">6 Pepelu</a></li>
+								<li><a href="#">7 Pitu</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="heading"><h2>Reproductor Multimedia</h2></div>
+					<div class="content">
+						<div class="list" id="sidebar">
+							<li class="titsong">NBA Live</li>
+							<audio class="reproductor" src="songs/nba_live.mp3" controls autoplay></audio><br>
+							<li class="titsong">Blue Ducks Four Floss Five Six 2</li>
+							<audio class="reproductor" src="songs/BlueDucks_FourFlossFiveSix.mp3" controls></audio><br>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--Footer-->
+<footer>
+	<div class="wrap-footer zerogrid">
+		<div class="row block09">
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Nosotros</h2></div>
+						<div class="content">
+							<p>Somos tres alumnos del curso de verano proporcionado por JEDI Academy, y presentamos nuestro proyecto esperando que sea del agrado de todos vosotros.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Últimos Posts</h2></div>
+						<div class="content">
+							<ul>
+								<li><a href="#">Magic Island Ibiza</a></li>
+								<li><a href="#">Bamboo Is Just For You</a></li>
+								<li><a href="#">Every Hot Summer</a></li>
+								<li><a href="#">Magic Island Ibiza</a></li>
+								<li><a href="#">Bamboo Is Just For You</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Contact Us</h2></div>
+						<div class="content">
+							<ul>
+								<li>Dirección : 0123 Elm Street.</li>
+								<li>Teléfono : 000.000.000.000</li>
+								<li>Email : Nosotros@alumnosjedi.com</li>
+								<li>Website : padawan.jediupc.com</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row copyright">
+			<p>Handicap One Copyright © 2015 - Built by Raúl Lorenzo   <img id="upc" src="images/upc.png"></p>
+			
+		</div>
+	</div>
+	<a class="go-top" href="#">Subir</a>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+<script src="js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<script type="text/javascript" src="engine1/jquery.js"></script>
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="js/weblinking.js"></script>
+<script src="js/uritemplate.js"></script>
+<script src="js/jquery.base64.js"></script>
+<script src="js/linkheaders.js"></script>
+<script src="js/jquery.cookie.js"></script>
+
+
+
+
+<!-- JavaScript -->
+	
+	<script>
+		$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+	</script>
+	<script type="text/javascript"> 
+		function startTime(){ today=new Date();
+			h=today.getHours(); 
+			m=today.getMinutes(); 
+			s=today.getSeconds(); 
+			m=checkTime(m); s=checkTime(s); 
+			document.getElementById('reloj').innerHTML=h+":"+m+":"+s; 
+			t=setTimeout('startTime()',500);
+		} 
+		function checkTime(i) {
+			if (i<10) {
+				i="0" + i;
+			}
+			return i;
+		} 
+		window.onload=function(){
+			startTime();
+		} 
+	</script> 
+
+	
+
+</body>
+</html>
+
+
+
+
