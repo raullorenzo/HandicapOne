@@ -5,5 +5,5 @@
 - BBDD in SQL
 - APACHE TOMCAT Server
 
-Project created at 2014 with Raul Lorenzo Merino
+Project created at 2014 by Raul Lorenzo Merino
 All rigths reserved ©
